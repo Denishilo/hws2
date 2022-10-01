@@ -4,6 +4,7 @@ import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
+import joli from './joli.jpeg'
 
 /*
 * 1 - описать тип MessageType
@@ -35,30 +36,31 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Brad Pitt',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hello my ex-wife. How are you?', // можно менять
+        time: '09:00', // можно менять
     },
 }
 
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
-        avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        avatar: joli, // можно менять
+        name: 'Angelina Jolie', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti id iure laborum magnam obcaecati quam quisquam quod reprehenderit rerum! Aliquid, autem corporis cum deserunt dicta dolore et ex, expedita facere fuga incidunt minima modi molestias nobis numquam rem sit ut. Aliquid aut dolores modi quia reprehenderit tempore vel voluptatibus.', // можно менять
+        time: '09:03', // можно менять
     },
 }
 
 const HW1 = () => {
     return (
-        <div id={'hw1'}>
-            <div className={s2.hwTitle}>Homework #1</div>
+        <div id={'hw1'} className={s2.hw1}>
+            <div className={s2.hwTitle}>Hometask №1</div>
+
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>

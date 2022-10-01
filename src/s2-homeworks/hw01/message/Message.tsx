@@ -15,21 +15,16 @@ const Message = (props: MessagePropsType) => {
     return (
         <div id={'hw1-message-' + id} className={s.message}>
             <div className={s.imageAndText}>
-                <img alt={'avatar'}
-                    id={'hw1-avatar-' + id}
-                    src={user.avatar}
-                />
+                <img alt={'avatar'} id={'hw1-avatar-' + id} src={user.avatar}/>
                 <div className={s.text}>
                     <div id={'hw1-name-' + id} className={s.name}>
                         {user.name}
-
-                        {/**/}
                     </div>
-                    <pre id={'hw1-text-' + id} className={s.messageText}>
+                    <div id={'hw1-text-' + id} className={s.messageText}>
                         {message.text}
 
                         {/**/}
-                    </pre>
+                    </div>
                 </div>
             </div>
             <div id={'hw1-time-' + id} className={s.time}>
