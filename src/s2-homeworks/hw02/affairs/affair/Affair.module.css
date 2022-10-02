@@ -10,9 +10,18 @@
 .name {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 14px;
     width: 145px;
     height: 37px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
 }
 
 .closeButton {
