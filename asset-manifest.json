@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Denishilo/hws2.git/static/css/main.18f8ca56.css",
-    "main.js": "/Denishilo/hws2.git/static/js/main.b5ca18b6.js",
+    "main.css": "/Denishilo/hws2.git/static/css/main.39f6a5ef.css",
+    "main.js": "/Denishilo/hws2.git/static/js/main.9da0cd87.js",
     "static/js/787.66cb4309.chunk.js": "/Denishilo/hws2.git/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/Denishilo/hws2.git/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/Denishilo/hws2.git/index.html",
-    "main.18f8ca56.css.map": "/Denishilo/hws2.git/static/css/main.18f8ca56.css.map",
-    "main.b5ca18b6.js.map": "/Denishilo/hws2.git/static/js/main.b5ca18b6.js.map",
+    "main.39f6a5ef.css.map": "/Denishilo/hws2.git/static/css/main.39f6a5ef.css.map",
+    "main.9da0cd87.js.map": "/Denishilo/hws2.git/static/js/main.9da0cd87.js.map",
     "787.66cb4309.chunk.js.map": "/Denishilo/hws2.git/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18f8ca56.css",
-    "static/js/main.b5ca18b6.js"
+    "static/css/main.39f6a5ef.css",
+    "static/js/main.9da0cd87.js"
   ]
 }
