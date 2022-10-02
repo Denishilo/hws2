@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Denishilo/hws2.git/static/css/main.39f6a5ef.css",
-    "main.js": "/Denishilo/hws2.git/static/js/main.9da0cd87.js",
-    "static/js/787.66cb4309.chunk.js": "/Denishilo/hws2.git/static/js/787.66cb4309.chunk.js",
-    "static/media/avatar.png": "/Denishilo/hws2.git/static/media/avatar.d947cb9d0d13765666b6.png",
-    "index.html": "/Denishilo/hws2.git/index.html",
-    "main.39f6a5ef.css.map": "/Denishilo/hws2.git/static/css/main.39f6a5ef.css.map",
-    "main.9da0cd87.js.map": "/Denishilo/hws2.git/static/js/main.9da0cd87.js.map",
-    "787.66cb4309.chunk.js.map": "/Denishilo/hws2.git/static/js/787.66cb4309.chunk.js.map"
+    "main.css": "/hws2/static/css/main.39f6a5ef.css",
+    "main.js": "/hws2/static/js/main.db2ed1d5.js",
+    "static/js/787.66cb4309.chunk.js": "/hws2/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/hws2/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/hws2/index.html",
+    "main.39f6a5ef.css.map": "/hws2/static/css/main.39f6a5ef.css.map",
+    "main.db2ed1d5.js.map": "/hws2/static/js/main.db2ed1d5.js.map",
+    "787.66cb4309.chunk.js.map": "/hws2/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.39f6a5ef.css",
-    "static/js/main.9da0cd87.js"
+    "static/js/main.db2ed1d5.js"
   ]
 }
