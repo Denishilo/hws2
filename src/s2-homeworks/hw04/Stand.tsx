@@ -14,84 +14,51 @@ const Stand = () => {
         <div id={'hw4-stand'} className={s.stand}>
             <div className={s.inputs}>
                 {/*совместим со старым кодом:*/}
+
                 <div>
-                    <SuperInputText
-                        id={'hw4-super-input-like-old'}
-                        value={stateForAllInputs}
-                        onChange={(e) => setValue(e.currentTarget.value)}
-                    />
+                    <SuperInputText id={'hw4-super-input-like-old'} value={stateForAllInputs}  onChange={(e) => setValue(e.currentTarget.value)}/>
                 </div>
+
                 {/*инпут с ошибкой:*/}
                 <div>
-                    <SuperInputText
-                        id={'hw4-super-input-with-error'}
-                        value={stateForAllInputs}
-                        onChangeText={setValue}
-                        error={error}
-                        onEnter={() => {
-                            setError(
-                                stateForAllInputs.trim()
-                                    ? ''
-                                    : 'Error'
-                            )
+                    <SuperInputText id={'hw4-super-input-with-error'} value={stateForAllInputs} onChangeText={setValue}  error={error} onEnter={() => {
+                            setError(stateForAllInputs.trim() ? '' : 'Error')
                             setValue('')
-                        }}
-                    />
+                        }} spanClassName={'spanClassName'} />
                 </div>
             </div>
+
 
             <div className={s.buttons}>
                 {/*обычная кнопка:*/}
                 <div>
-                    <SuperButton id={'hw4-super-button-default'}>
-                        default
-                    </SuperButton>
+                    <SuperButton id={'hw4-super-button-default'} className={'default'}>Дефолтная</SuperButton>
                 </div>
                 {/*красная кнопка:*/}
                 <div>
-                    <SuperButton id={'hw4-super-button-red'} xType={'red'}>
-                        red
-                    </SuperButton>
+                    <SuperButton id={'hw4-super-button-red'} xType={'red'}>Опастность</SuperButton>
                 </div>
                 {/*задизэйбленная кнопка:*/}
                 <div>
-                    <SuperButton
-                        id={'hw4-super-button-disabled'}
-                        xType={'red'}
-                        disabled
-                    >
-                        disabled
-                    </SuperButton>
+                    <SuperButton id={'hw4-super-button-disabled'} xType={'red'} disabled>Не активна</SuperButton>
                 </div>
-                {/*задизэйбленная кнопка:*/}
+                {/*Дополнительная кнопка:*/}
                 <div>
-                    <SuperButton
-                        id={'hw4-super-button-secondary'}
-                        xType={'secondary'}
-                    >
-                        secondary
-                    </SuperButton>
+                    <SuperButton id={'hw4-super-button-secondary'} className={'secondary'} xType={'secondary'}>Дополнительная</SuperButton>
                 </div>
             </div>
+
 
             <div className={s.checkboxes}>
                 {/*чекбокс с текстом:*/}
                 <div>
-                    <SuperCheckbox
-                        id={'hw4-super-checkbox-with-text'}
-                        checked={stateForAllCheckboxes}
-                        onChangeChecked={setChecked}
-                    >
-                        some text
+                    <SuperCheckbox id={'hw4-super-checkbox-with-text'} checked={stateForAllCheckboxes} onChangeChecked={setChecked}>
+                        Hometask
                     </SuperCheckbox>
                 </div>
                 {/*совместим со старым кодом:*/}
                 <div>
-                    <SuperCheckbox
-                        id={'hw4-super-checkbox-like-old'}
-                        checked={stateForAllCheckboxes}
-                        onChange={(e) => setChecked(e.currentTarget.checked)}
-                    />
+                    <SuperCheckbox id={'hw4-super-checkbox-like-old'} checked={stateForAllCheckboxes} onChange={(e) => setChecked(e.currentTarget.checked)}/>
                 </div>
             </div>
         </div>

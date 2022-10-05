@@ -15,8 +15,6 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
         setName('')
         setError('')
     }
-
-    // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
 }
 
 export const pureOnBlur = (name: string, setError: (error: string) => void) => {
@@ -35,10 +33,9 @@ export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => v
 
 // более простой и понятный для новичков
 // function GreetingContainer(props: GreetingPropsType) {
-
 // более современный и удобный для про :)
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback,}) => {
-    // деструктуризация пропсов
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
+
     const [name, setName] = useState<string>('')
     const [error, setError] = useState<string>('')
 

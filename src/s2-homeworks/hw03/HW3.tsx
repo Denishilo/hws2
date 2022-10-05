@@ -32,7 +32,7 @@ export const pureAddUserCallback = (name: string, setUsers: (users: Array<UserTy
 }
 
 const HW3 = () => {
-    const [users, setUsers] = useState<Array<UserType>>([]) // need to fix any
+    const [users, setUsers] = useState<Array<UserType>>([])
 
     const addUserCallback = (name: string) => {
         pureAddUserCallback(name, setUsers, users)

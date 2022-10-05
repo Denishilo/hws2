@@ -1,20 +1,43 @@
 .input:focus {
+
 }
 
 .input {
+
 }
 
 .inputWrapper {
-}
-
-.superInput {
+    display: flex;
+    flex-direction: column;
 }
 
 .errorInput {
+    border: 1px solid red;
+}
+.superInput {
+    /*border: 1px solid black;*/
 }
 
+
+
 .errorInput:focus {
+    border: 3px solid red;
 }
 
 .error {
+    order: -1;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #CC1439;
+}
+.spanClassName {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.addNewStyleInput{
+    background: #d8fffe;
 }
