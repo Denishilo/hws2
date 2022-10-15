@@ -1,7 +1,8 @@
 .App {
     --header_height: 60px;
     width: 130em;
-    margin: 50px auto;
+    margin: 0 auto;
+
 
 }
 
@@ -9,15 +10,17 @@
     max-width: 116em;
     margin: 0 auto;
     padding: 0 1em;
+
 }
 
 .hwTitle {
-    padding: 1em;
+    max-width: 116em;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 2.2em;
     line-height: 2.7em;
-    margin-bottom: 1em;
+    margin: 30px 0 30px 80px;
 }
 
