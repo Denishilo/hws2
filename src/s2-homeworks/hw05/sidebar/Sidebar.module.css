@@ -1,16 +1,16 @@
 .sidebar {
     z-index: 999;
     width: 320px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -320px;
+    height: 320px;
+    position: absolute;
+    top: -320px;
+    left: 0;
     transition: 0.6s all;
 }
 
 .sidebar.open {
-    left: 0;
-    border-radius: 10px;
+    top: 0;
+    border-radius: 0 10px 10px 10px;
     background: #FFFFFF;
 
 }

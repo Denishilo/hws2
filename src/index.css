@@ -22,4 +22,5 @@ code {
 #root{
     width: 130em;
     margin: 0 auto;
+    position: relative;
 }
