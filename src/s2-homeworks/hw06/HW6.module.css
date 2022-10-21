@@ -1,5 +1,14 @@
 .buttonsContainer {
+    display: flex;
+    gap:24px;
 }
 
 .editableSpanContainer {
+    max-width: 262px;
+}
+
+.secondary {
+    color: #0066CC;
+    background: none;
+    border: 1px solid #0066CC;
 }

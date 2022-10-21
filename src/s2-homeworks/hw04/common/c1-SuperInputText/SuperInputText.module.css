@@ -2,23 +2,25 @@
     outline: none;
 }
 
-.input {
-
-}
-
 .inputWrapper {
     display: flex;
     flex-direction: column;
 }
 
-.errorInput {
-    border: 1px solid red;
-}
 .superInput {
-    /*border: 1px solid black;*/
+    width: 372px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
 }
 
-
+.errorInput {
+    border: 2px solid red;
+}
 
 .errorInput:focus {
     border: 3px solid red;
@@ -29,15 +31,12 @@
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 17px;
     color: #CC1439;
-}
-.spanClassName {
     font-size: 16px;
     margin-bottom: 5px;
 }
 
-.addNewStyleInput{
+.addNewStyleInput {
     background: #d8fffe;
 }

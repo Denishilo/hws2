@@ -34,7 +34,7 @@ const HW6 = () => {
                         onChangeText={setValue}
                         spanProps={{
                             id: 'hw6-editable-span',
-                            defaultText: 'enter text...',
+                            defaultText: 'Edit text',
                         }}
                     />
                 </div>
@@ -47,6 +47,7 @@ const HW6 = () => {
                         id={'hw6-restore'}
                         onClick={restore}
                         xType={'secondary'}
+                        className={'secondary'}
                     >
                         Get from ls
                     </SuperButton>
