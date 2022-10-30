@@ -4,7 +4,6 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color: #FFFFFF;
     padding: 5px 24px;
     border-radius: 3px;
     border: none;
@@ -13,10 +12,12 @@
 
 .default {
     background: #0066CC;
+    color: #FFFFFF;
 }
 
 .red {
     background: #CC1439;
+    color: #FFFFFF;
 }
 
 .disabled {

@@ -2,7 +2,7 @@ import React from 'react'
 import { homeWorkReducer } from '../homeWorkReducer'
 import { UserType } from '../../HW8'
 
-let initialState: UserType[] // need to fix any
+let initialState: UserType[]
 
 beforeEach(() => {
     initialState = [
@@ -16,6 +16,7 @@ beforeEach(() => {
 })
 
 test('sort name up', () => {
+
     const newState = homeWorkReducer(initialState, {
         type: 'sort',
         payload: 'up',

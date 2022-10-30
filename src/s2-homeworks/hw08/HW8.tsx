@@ -19,12 +19,12 @@ export type UserType = {
 
 const initialPeople: UserType[] = [
     // студенты могут поменять имя/возраст/количество объектов, _id должны быть целочисленные
-    {_id: 0, name: 'Кот', age: 3},
-    {_id: 1, name: 'Александр', age: 66},
-    {_id: 2, name: 'Коля', age: 16},
-    {_id: 3, name: 'Виктор', age: 44},
-    {_id: 4, name: 'Дмитрий', age: 40},
-    {_id: 5, name: 'Ирина', age: 55},
+    {_id: 0, name: 'Аладинов Антон', age: 13},
+    {_id: 1, name: 'Бориславов Макс', age: 66},
+    {_id: 2, name: 'Макаров Михаил', age: 16},
+    {_id: 3, name: 'Тимошин Роман', age: 44},
+    {_id: 4, name: 'Дмитрий Алексин', age: 40},
+    {_id: 5, name: 'Ирина Иванова', age: 55},
 ]
 
 const HW8 = () => {
@@ -36,20 +36,20 @@ const HW8 = () => {
     const sortUp = () => {
         setPeople(
             homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'})
-        ) // в алфавитном порядке a.name > b.name
+        )
         setCurrentSort('up')
     }
 
     const sortDown = () => {
         setPeople(
             homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'})
-        ) // в обратном порядке a.name < b.name}
+        )
         setCurrentSort('down')
     }
     const check18 = () => {
         setPeople(
             homeWorkReducer(initialPeople, {type: 'check', payload: 18})
-        ) // совершеннолетние
+        )
         setCurrentSort('18')
     }
 
@@ -62,21 +62,24 @@ const HW8 = () => {
                         <SuperButton
                             id={'hw8-button-up'}
                             onClick={sortUp}
-                            xType={currentSort === 'up' ? '' : 'secondary'}
+                            //xType={currentSort === 'up' ? '' : 'secondary'}
+                            className={currentSort !== 'up' ? 'secondary' : ''}
                         >
                             Sort up
                         </SuperButton>
                         <SuperButton
                             id={'hw8-button-down'}
                             onClick={sortDown}
-                            xType={currentSort === 'down' ? '' : 'secondary'}
+                            //xType={currentSort === 'down' ? '' : 'secondary'}
+                            className={currentSort !== 'down' ? 'secondary' : ''}
                         >
                             Sort down
                         </SuperButton>
                         <SuperButton
                             id={'hw8-button-18'}
                             onClick={check18}
-                            xType={currentSort === '18' ? '' : 'secondary'}
+                            //xType={currentSort === '18' ? '' : 'secondary'}
+                            className={currentSort !== '18' ? 'secondary' : ''}
                         >
                             Check 18+
                         </SuperButton>
@@ -85,7 +88,7 @@ const HW8 = () => {
                     <table id={'hw8-users'} className={s.users}>
                         <thead className={s.thead}>
                         <tr>
-                            <td className={s.nameCol}>Name</td>
+                            <td className={s.nameCol}>Full name</td>
                             <td className={s.ageCol}>Age</td>
                         </tr>
                         </thead>
