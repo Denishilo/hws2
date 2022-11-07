@@ -12,9 +12,7 @@ function Clock() {
     const start = () => {
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
-        const timer: number = +setInterval(() => {
-            setDate(new Date())
-        }, 1000)
+        const timer:number = +setInterval(()=>{setDate(new Date())},1000)
         setTimerId(timer)
     }
     const stop = () => {
@@ -31,8 +29,21 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = date.toLocaleTimeString() || <br/>
-    const stringDate = date.toLocaleDateString('ru') || <br/>
+
+    // const formatterTime = new Intl.DateTimeFormat("ru", {
+    //     hour: "numeric",
+    //     minute: "numeric",
+    //     second: "numeric"
+    // });
+    //
+    // const formatterDate = new Intl.DateTimeFormat("ru");
+    // const formatterDay = new Intl.DateTimeFormat("en", {weekday: "long"});
+    // const formatterMonth = new Intl.DateTimeFormat("en", {month: "long"});
+    const stringTime = date.toLocaleTimeString("ru", {
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric"}) || <br/>
+    const stringDate = date.toLocaleDateString('ru')  || <br/>
     const stringDay = date.toLocaleDateString("en", {weekday: "long"}) || <br/>
     const stringMonth = date.toLocaleDateString("en", {month: "long"}) || <br/>
 
