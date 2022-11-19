@@ -29,16 +29,6 @@ function Clock() {
         setShow(false)
     }
 
-
-    // const formatterTime = new Intl.DateTimeFormat("ru", {
-    //     hour: "numeric",
-    //     minute: "numeric",
-    //     second: "numeric"
-    // });
-    //
-    // const formatterDate = new Intl.DateTimeFormat("ru");
-    // const formatterDay = new Intl.DateTimeFormat("en", {weekday: "long"});
-    // const formatterMonth = new Intl.DateTimeFormat("en", {month: "long"});
     const stringTime = date.toLocaleTimeString("ru", {
         hour: "numeric",
         minute: "numeric",
